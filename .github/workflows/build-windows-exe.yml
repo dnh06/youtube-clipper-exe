@@ -32,9 +32,9 @@ jobs:
 
       - name: Build EXE with FFmpeg bundled
         run: |
-          pyinstaller --onefile ^
-            --name tool ^
-            --add-binary "ffmpeg\\ffmpeg.exe;." ^
+          pyinstaller --onefile
+            --name tool
+            --add-binary "ffmpeg\\ffmpeg.exe;."
             main.py
 
       - name: Zip output
